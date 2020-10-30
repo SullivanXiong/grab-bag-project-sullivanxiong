@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+}
+
+h2#title {
+    margin: 0px;
+    height: 3vh;
+    text-align: center;
+}
+
+div#gearBagFrame {
+    font-family: Lato;
+    margin: 0px;
+    height: 25vh;
+    width: inherit;
+    border: 1px black solid;
+}
+
+div#devicesFrame {
+    font-family: Lato;
+    font-size: large;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    margin: 0px;
+    border: 1px black solid;
+    width: inherit;
+    height: 74.5vh;
+    background-color: rgb(1, 113, 187);
+}
+
+div#gearBag {
+    font-family: Lato;
+    font-weight: 600;
+    height: 22vh;
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12%;
+    grid-template-rows: 30%;
+    grid-column-gap: 2.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+div#gearBagItem {
+    width: 100%;
+    height: 20vh;
+    border: lightgray 1px solid;
+    box-shadow: rgba(17, 22, 26, 0.1) 0px 2px 4px, rgba(17, 22, 26, 0.2) 0px 8px 16px;
+}
+
+div#devices {
+    font-family: Lato;
+    height: 62.5vh;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12%;
+    grid-template-rows: 30%;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 15%;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+div#devicesItem {
+    width: 100%;
+    height: 20vh;
+    border: lightgray 1px solid;
+    box-shadow: rgba(17, 22, 26, 0.1) 0px 2px 4px, rgba(17, 22, 26, 0.2) 0px 8px 16px;
+}
+
+img#itemPhoto {
+    width: inherit;
+    height: inherit;
+    border-bottom: lightgray 1px solid;
+}
+
+div#itemTitle {
+    text-align: center;
+}
+
+button#nextButton {
+    font-family: Lato;
+    font-size: large;
+    font-weight: bold;
+    height: 5vh;
+    width: 7vw;
+    float: right;
+    margin-right: 1vw;
+}
+
+button#prevButton {
+    font-family: Lato;
+    font-size: large;
+    font-weight: bold;
+    height: 5vh;
+    width: 7vw;
+    float: left;
+    margin-left: 1vw;
+}
