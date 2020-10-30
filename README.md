@@ -6,14 +6,13 @@ A working production version is generated with every push and stored in the ./bu
 
 ## How to deploy
 
-You'll be required to have the 'serve' command from npm so run
-sudo npm install -g serve
+You'll be required to have the 'serve' command from npm so run\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`sudo npm install -g serve`
 
-Once you have the 'serve' command installed you can serve the build folder on localhost with the flags -s and -l.
--s specifies the source directory to serve
--l specifies the port to listen on
-serve -s build -l 3000
-
+Once you have the 'serve' command installed you can serve the build folder on localhost with the flags -s and -l.\
+`-s specifies the source directory to serve`\
+`-l specifies the port to listen on`\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`serve -s build -l 3000`
 
 ## Available Scripts
 
