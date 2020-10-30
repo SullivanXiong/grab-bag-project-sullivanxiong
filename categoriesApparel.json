@@ -1,0 +1,46 @@
+{
+    "wikiid": 14853,
+    "wiki_title": "Apparel",
+    "display_title": "",
+    "locale": "en",
+    "topic_info": [],
+    "image": {
+        "id": 299015,
+        "guid": "V6TBPeg6C6Ii1cI1",
+        "mini": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.mini",
+        "thumbnail": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.thumbnail",
+        "140x105": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.140x105",
+        "200x150": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.200x150",
+        "standard": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.standard",
+        "440x330": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.440x330",
+        "medium": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.medium",
+        "large": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.large",
+        "huge": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.huge",
+        "original": "https:\/\/d3nevzfk7ii3be.cloudfront.net\/igi\/V6TBPeg6C6Ii1cI1.full"
+    },
+    "description": "Information and repair for items you wear that eventually wear out.",
+    "flags": [],
+    "solutions": {
+        "url": "https:\/\/www.ifixit.com\/Answers\/Device\/Apparel",
+        "count": 2320
+    },
+    "parts": [],
+    "tools": [],
+    "ancestors": [],
+    "children": [
+        "Clothing",
+        "Shoe",
+        "Smartwatch",
+        "Eyeglasses",
+        "Watch",
+        "Accessory",
+        "Jewelry"
+    ],
+    "guides": [],
+    "documents": [],
+    "contents_rendered": "<div class=\"clearer\"><\/div><div class=\"headerContainer\"><a class=\"selfLink\" href=\"#Section_Background_and_Identification\" title=\"Link to this section\" aria-hidden=\"true\"><i  class=\"svg-icon\"   style=\"display: inline-block; width: 16px; height: 16px;\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"currentColor\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.1 2.899a3.976 3.976 0 0 0-5.622 0l-.94.94A.85.85 0 0 0 7.742 5.04l.94-.939a2.276 2.276 0 1 1 3.218 3.219l-.94.94a.85.85 0 1 0 1.203 1.201l.939-.94a3.976 3.976 0 0 0 0-5.622zM2.9 13.101a3.976 3.976 0 0 0 5.622 0l.94-.94a.85.85 0 0 0-1.203-1.201l-.94.939A2.276 2.276 0 1 1 4.102 8.68l.94-.94A.85.85 0 0 0 3.839 6.54l-.94.94a3.976 3.976 0 0 0 0 5.622z\"><\/path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.119 5.881a.875.875 0 0 1 0 1.238l-3 3A.875.875 0 0 1 5.88 8.88l3-3a.875.875 0 0 1 1.238 0z\"><\/path><\/svg><\/i><\/a><h2 id=\"Section_Background_and_Identification\" class=\"header\">Background and Identification<\/h2><\/div>\n\n<p>While not every culture has the same views on clothing, nearly every culture has some way of dressing itself. Be it a t-shirt, a tunic, or a turban, people wear clothes. But what happens to clothes when you wear them a lot? They rip. They break. They pop. They tear. Sometimes things happen that render apparel useless\u2026temporarily. Rather than throwing clothes or other wearables away, give them a fix and extend the life of your favorite garment.<\/p>\n\n<p>Apparel items that often call for repair include accessories, clothing, eyeglasses, jewelry, shoes, watches, and smartwatches. Apparel repair needs are often related to failure in the item\u2019s method of attachment. For instance, a purse strap could break off, your eyeglass rim could snap in half, a necklace chain could break, the strap on your watch could come apart, etc. Another common repair need within the apparel category is for clothing. Clothing repair needs span from repairing holes to reattaching buttons to mending broken zippers.<\/p>\n\n<p>Apparel, of course, comes in many forms. To identify something as apparel, consider whether or not you could attach it to yourself with minimal inconvenience throughout the day. Then consider whether or not you would feel comfortable attaching it to yourself and going out in public. If you would attach said object to your body, it is probably either apparel or you have impressive self-confidence.<\/p>\n\n<div class=\"clearer\"><\/div><div class=\"headerContainer\"><a class=\"selfLink\" href=\"#Section_Additional_Information\" title=\"Link to this section\" aria-hidden=\"true\"><i  class=\"svg-icon\"   style=\"display: inline-block; width: 16px; height: 16px;\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"currentColor\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.1 2.899a3.976 3.976 0 0 0-5.622 0l-.94.94A.85.85 0 0 0 7.742 5.04l.94-.939a2.276 2.276 0 1 1 3.218 3.219l-.94.94a.85.85 0 1 0 1.203 1.201l.939-.94a3.976 3.976 0 0 0 0-5.622zM2.9 13.101a3.976 3.976 0 0 0 5.622 0l.94-.94a.85.85 0 0 0-1.203-1.201l-.94.939A2.276 2.276 0 1 1 4.102 8.68l.94-.94A.85.85 0 0 0 3.839 6.54l-.94.94a3.976 3.976 0 0 0 0 5.622z\"><\/path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.119 5.881a.875.875 0 0 1 0 1.238l-3 3A.875.875 0 0 1 5.88 8.88l3-3a.875.875 0 0 1 1.238 0z\"><\/path><\/svg><\/i><\/a><h2 id=\"Section_Additional_Information\" class=\"header\">Additional Information<\/h2><\/div>\n\n<ul><li><a href=\"https:\/\/www.fashionbeans.com\/article\/watch-repairs-guide\/\" rel=\"nofollow noopener noreferrer\">A Guide to Common Watch Repairs<\/a><\/li><li><a href=\"\/Topic\/Zipper\">Zipper Repair<\/a><\/li><li><a href=\"https:\/\/dianaelizabethblog.com\/repairing-a-leather-strap-on-handbags-louis-vuitton-purse-edging-fray-repair\/\" rel=\"nofollow noopener noreferrer\">Repairing a Leather Handbag Strap<\/a><\/li><\/ul>",
+    "contents_raw": "[title|Apparel Repair]\n\n[summary]Information and repair for items you wear that eventually wear out.[\/summary]\n\n[summary_image|299015]\n\n== Background and Identification ==\n\nWhile not every culture has the same views on clothing, nearly every culture has some way of dressing itself. Be it a t-shirt, a tunic, or a turban, people wear clothes. But what happens to clothes when you wear them a lot? They rip. They break. They pop. They tear. Sometimes things happen that render apparel useless\u2026temporarily. Rather than throwing clothes or other wearables away, give them a fix and extend the life of your favorite garment.\n\nApparel items that often call for repair include accessories, clothing, eyeglasses, jewelry, shoes, watches, and smartwatches. Apparel repair needs are often related to failure in the item\u2019s method of attachment. For instance, a purse strap could break off, your eyeglass rim could snap in half, a necklace chain could break, the strap on your watch could come apart, etc. Another common repair need within the apparel category is for clothing. Clothing repair needs span from repairing holes to reattaching buttons to mending broken zippers.\n\nApparel, of course, comes in many forms. To identify something as apparel, consider whether or not you could attach it to yourself with minimal inconvenience throughout the day. Then consider whether or not you would feel comfortable attaching it to yourself and going out in public. If you would attach said object to your body, it is probably either apparel or you have impressive self-confidence.\n\n== Additional Information ==\n\n* [https:\/\/www.fashionbeans.com\/article\/watch-repairs-guide\/|A Guide to Common Watch Repairs]\n* [[Topic:Zipper|Zipper Repair]]\n* [https:\/\/dianaelizabethblog.com\/repairing-a-leather-strap-on-handbags-louis-vuitton-purse-edging-fray-repair\/|Repairing a Leather Handbag Strap]",
+    "title": null,
+    "contents": null,
+    "category_info": null
+}
