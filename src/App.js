@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useContext } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import GearBagList from './GearBagList'
 import DevicesList from './DevicesList'
 import $ from 'jquery'
@@ -10,15 +10,19 @@ function App() {
     const [gearBag, setGearBag] = useState([]);
     const [devices, setDevices] = useState([]);
     const [pageNumber, setPageNumber] = useState([0]);
-    var deviceTitles = [];
+    var deviceTitles = []
 
     const nextRef = useRef();
     const prevRef = useRef();
+    const gearBagRef = useRef();
+    const gearBagFrameRef = useRef();
 
     // Load our Gear bag devices from local storage
     useEffect(() => {
         const storedGearBag = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-        if (storedGearBag) setGearBag(storedGearBag);
+        if (storedGearBag) {
+            setGearBag(storedGearBag);
+        }
 
         prevRef.current.style = "display: None;";
 
@@ -47,6 +51,7 @@ function App() {
     // Store our Gear bag devices to local storage
     useEffect(() => {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(gearBag));
+        resizeGearBag();
     }, [gearBag]);
 
     function prevPage() {
@@ -71,10 +76,6 @@ function App() {
         toggleDevice(copyPageNumber[0]);
     }
 
-    function toggleGrabBag(title) {
-        return;
-    }
-
     function toggleDevice(pageNum) {
         let newDevices = []
         let deviceTitles = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY_DEVICES));
@@ -89,18 +90,47 @@ function App() {
         }
     }
 
+    function resizeGearBag() {
+        let rows = Math.floor(gearBag.length / 7)
+        gearBagFrameRef.current.style = `height: ${((rows + 1) * 26) + 3}vh;`
+        gearBagRef.current.style = `height: ${(rows + 1) * 23}vh;`
+    }
+
+    function toggleGearBag(title) {
+        let newGearBag = [...gearBag]
+        
+        $.get(`https://www.ifixit.com/api/2.0/categories/${title}`, (data) => newGearBag = [...newGearBag, data])
+            .then(() => {
+                setGearBag(newGearBag);
+            });
+        resizeGearBag();
+    }
+
+    function drop(element) {
+        element.preventDefault();
+        const device_title = element.dataTransfer.getData('deviceTitle');
+
+        toggleGearBag(device_title);
+        console.log('Drop');
+    }
+
+    function dragOver(element) {
+        element.preventDefault();
+    }
+
+
     return (
         <>
-            <div id="gearBagFrame">
+            <div ref={gearBagFrameRef} id="gearBagFrame" onDrop={drop} onDragOver={dragOver}>
                 <h2 id="title">My Gear Bag</h2>
-                <div id="gearBag">
-                    <GearBagList gbitems={gearBag} toggleGrabBag={toggleGrabBag} />
+                <div id="gearBag" ref={gearBagRef}>
+                    <GearBagList gbitems={gearBag} toggleGearBag={toggleGearBag}/>
                 </div>
             </div>
             <div id="devicesFrame">
                 <h2 id="title">Devices</h2>
                 <div id="devices">
-                    <DevicesList  deviceitems={devices} toggleDevice={toggleDevice} />
+                    <DevicesList  deviceitems={devices}/>
                 </div>
                 <button ref={prevRef} id="prevButton" onClick={prevPage}>PREV</button>
                 <button ref={nextRef} id="nextButton" onClick={nextPage}>NEXT</button>
