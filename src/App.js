@@ -92,7 +92,7 @@ function App() {
     }
 
     function resizeGearBag() {
-        let rows = Math.floor(gearBag.length / 7)
+        let rows = Math.floor(gearBag.length / 8)
         gearBagFrameRef.current.style = `height: ${((rows + 1) * 26) + 3}vh;`
         gearBagRef.current.style = `height: ${(rows + 1) * 23}vh;`
     }
