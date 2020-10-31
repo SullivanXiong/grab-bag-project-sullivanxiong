@@ -46,6 +46,7 @@ div#gearBagItem {
     height: 20vh;
     border: lightgray 1px solid;
     box-shadow: rgba(17, 22, 26, 0.1) 0px 2px 4px, rgba(17, 22, 26, 0.2) 0px 8px 16px;
+    position: relative;
 }
 
 div#devices {
@@ -97,4 +98,19 @@ button#prevButton {
     width: 7vw;
     float: left;
     margin-left: 1vw;
+}
+
+img#itemPhotoGear {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    border-bottom: lightgray 1px solid;
+}
+
+#redXLogo {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
 }

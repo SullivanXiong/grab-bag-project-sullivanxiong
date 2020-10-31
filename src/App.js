@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import GearBagList from './GearBagList'
 import DevicesList from './DevicesList'
+import uuidv4 from 'uuid/v4';
 import $ from 'jquery'
 
-const LOCAL_STORAGE_KEY = 'grabBagApp';
+const LOCAL_STORAGE_KEY_GRAB_BAG = 'grabBag';
 const LOCAL_STORAGE_KEY_DEVICES = 'devices';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
 
     // Load our Gear bag devices from local storage
     useEffect(() => {
-        const storedGearBag = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+        const storedGearBag = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY_GRAB_BAG));
         if (storedGearBag) {
             setGearBag(storedGearBag);
         }
@@ -50,7 +51,7 @@ function App() {
 
     // Store our Gear bag devices to local storage
     useEffect(() => {
-        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(gearBag));
+        localStorage.setItem(LOCAL_STORAGE_KEY_GRAB_BAG, JSON.stringify(gearBag));
         resizeGearBag();
     }, [gearBag]);
 
@@ -99,7 +100,10 @@ function App() {
     function toggleGearBag(title) {
         let newGearBag = [...gearBag]
         
-        $.get(`https://www.ifixit.com/api/2.0/categories/${title}`, (data) => newGearBag = [...newGearBag, data])
+        $.get(`https://www.ifixit.com/api/2.0/categories/${title}`, (data) => {
+            data.id = uuidv4();
+            newGearBag = [...newGearBag, data];
+        })
             .then(() => {
                 setGearBag(newGearBag);
             });
@@ -118,19 +122,28 @@ function App() {
         element.preventDefault();
     }
 
+    function deviceDelete(element) {
+        element.preventDefault();
+        const deviceUuid = element.dataTransfer.getData('deviceUuid');
+        
+        let copyGearBag = [...gearBag]
+        copyGearBag = copyGearBag.filter(device => device.id !== deviceUuid);
+        setGearBag(copyGearBag)
+    }
+
 
     return (
         <>
             <div ref={gearBagFrameRef} id="gearBagFrame" onDrop={drop} onDragOver={dragOver}>
                 <h2 id="title">My Gear Bag</h2>
                 <div id="gearBag" ref={gearBagRef}>
-                    <GearBagList gbitems={gearBag} toggleGearBag={toggleGearBag}/>
+                    <GearBagList gbitems={gearBag} toggleGearBag={toggleGearBag} setGearBag={setGearBag}/>
                 </div>
             </div>
-            <div id="devicesFrame">
+            <div id="devicesFrame" onDrop={deviceDelete} onDragOver={dragOver}>
                 <h2 id="title">Devices</h2>
-                <div id="devices">
-                    <DevicesList  deviceitems={devices}/>
+                <div id="devices" onDrop={deviceDelete} onDragOver={dragOver}>
+                    <DevicesList  deviceitems={devices} deviceDelete={deviceDelete} dragOver={dragOver}/>
                 </div>
                 <button ref={prevRef} id="prevButton" onClick={prevPage}>PREV</button>
                 <button ref={nextRef} id="nextButton" onClick={nextPage}>NEXT</button>
